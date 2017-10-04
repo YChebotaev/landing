@@ -2,12 +2,13 @@ import React from 'react';
 import windowSize from 'react-window-size';
 import Container from './Container';
 import Button from './Button';
+import Link from './Link';
 
 const Avatar = () => {
   const style = {
     width: 180,
     height: 180,
-    // backgroundImage: 'url("/assets/my-picture.jpg")',
+    backgroundImage: 'url("/assets/my-picture.jpg")',
     overflow: 'hidden',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -59,11 +60,11 @@ export default windowSize(({ windowWidth: width, windowHeight: height }) => {
         <Avatar />
         <h1 style={headerStyle}>Чеботаев Юра</h1>
         <p style={contactsStyle}>
-          Telegram: +79120345101
+          Telegram: <Link href="https://t.me/ychebotaev">+79120345101</Link>
           <br />
-          Email: +79120345101@ya.ru
+          Email: <Link href="mailto:+79120345101@ya.ru">+79120345101@ya.ru</Link> 
         </p>
-        <Button style={buttonStyle}>Веб-разработка</Button>
+        <Button href="https://yadi.sk/d/5Lyw24_H3NTy6s" style={buttonStyle}>Веб-разработка</Button>
         <div style={buttonCaptionStyle}>Скачать презентацию .pptx</div>
       </Container>
     </div>

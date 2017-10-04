@@ -17,7 +17,7 @@ export default () => {
     <div style={style}>
       <Container>
         <h2>Выйти на связь</h2>
-        <Form style={formStyle} action="//formspree.io/yury.791203451@gmail.com" method="POST">
+        <Form style={formStyle} action="//formspree.io/+791203451@ya.ru" method="POST">
           <FormControl name="name" type="text" label="Как вас зовут?" />
           <FormControl name="phone" type="text" label="Контактный телефон" />
           <FormControl name="_replyto" type="email" label="Контактный емейл" />

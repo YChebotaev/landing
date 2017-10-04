@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from './Container';
+import Link from './Link';
 
 export default () => {
   const style = {
@@ -29,11 +30,11 @@ export default () => {
         <p style={textStyle}>
           Россия, Екатеринбург (+5 UTC)
           <br />
-          Email: +79120345101@ya.ru
+          Email: <Link href="mailto:+79120345101@ya.ru">+79120345101@ya.ru</Link>
           <br />
-          Skype: bloxfox (always offline)
+          Skype: <Link href="skype:bloxfox?call">bloxfox</Link> (always offline)
           <br />
-          Telegram: +79120345101
+          Telegram: <Link href="https://t.me/ychebotaev" target="_blank" rel="noopener noreferrer">+79120345101</Link>
         </p>
         <p style={copyrightStyle}>Copyright &copy; 2017</p>
       </Container>
