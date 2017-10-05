@@ -30,11 +30,11 @@ export default () => {
         <p style={textStyle}>
           Россия, Екатеринбург (+5 UTC)
           <br />
-          Email: <Link href="mailto:+79120345101@ya.ru">+79120345101@ya.ru</Link>
+          Email: <Link notBounce href="mailto:+79120345101@ya.ru">+79120345101@ya.ru</Link>
           <br />
-          Skype: <Link href="skype:bloxfox?call">bloxfox</Link> (always offline)
+          Skype: <Link notBounce href="skype:bloxfox?call">bloxfox</Link> (always offline)
           <br />
-          Telegram: <Link href="https://t.me/ychebotaev" target="_blank" rel="noopener noreferrer">+79120345101</Link>
+          Telegram: <Link notBounce href="https://t.me/ychebotaev" target="_blank" rel="noopener noreferrer">+79120345101</Link>
         </p>
         <p style={copyrightStyle}>Copyright &copy; 2017</p>
       </Container>

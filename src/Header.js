@@ -60,11 +60,11 @@ export default windowSize(({ windowWidth: width, windowHeight: height }) => {
         <Avatar />
         <h1 style={headerStyle}>Чеботаев Юра</h1>
         <p style={contactsStyle}>
-          Telegram: <Link href="https://t.me/ychebotaev">+79120345101</Link>
+          Telegram: <Link notBounce href="https://t.me/ychebotaev">+79120345101</Link>
           <br />
-          Email: <Link href="mailto:+79120345101@ya.ru">+79120345101@ya.ru</Link> 
+          Email: <Link notBounce href="mailto:+79120345101@ya.ru">+79120345101@ya.ru</Link> 
         </p>
-        <Button href="https://yadi.sk/d/5Lyw24_H3NTy6s" style={buttonStyle}>Веб-разработка</Button>
+        <Button notBounce href="https://yadi.sk/d/5Lyw24_H3NTy6s" style={buttonStyle}>Веб-разработка</Button>
         <div style={buttonCaptionStyle}>Скачать презентацию .pptx</div>
       </Container>
     </div>
