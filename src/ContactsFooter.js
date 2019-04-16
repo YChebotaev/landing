@@ -1,12 +1,12 @@
-import React from 'react';
-import Container from './Container';
-import Link from './Link';
+import React from 'react'
+import Container from './Container'
+import Link from './Link'
 
 export default () => {
   const style = {
     marginTop: '3rem',
     marginBottom: '3rem'
-  };
+  }
   const textStyle = {
     margin: 'auto',
     color: '#323232',
@@ -14,7 +14,7 @@ export default () => {
     textAlign: 'center',
     fontSize: '1rem',
     lineHeight: 1.5
-  };
+  }
   const copyrightStyle = {
     margin: 'auto',
     color: '#323232',
@@ -22,7 +22,7 @@ export default () => {
     textAlign: 'center',
     fontSize: '0.8rem',
     lineHeight: 1.5
-  };
+  }
   return (
     <footer style={style}>
       <Container>
@@ -30,14 +30,28 @@ export default () => {
         <p style={textStyle}>
           Россия, Екатеринбург (+5 UTC)
           <br />
-          Email: <Link notBounce href="mailto:+79120345101@ya.ru">+79120345101@ya.ru</Link>
+          Email:{' '}
+          <Link notBounce href='mailto:+79120345101@ya.ru'>
+            +79120345101@ya.ru
+          </Link>
           <br />
-          Skype: <Link notBounce href="skype:bloxfox?call">bloxfox</Link> (always offline)
+          Skype:{' '}
+          <Link notBounce href='skype:ychebotaev?call'>
+            ychebotaev
+          </Link>
           <br />
-          Telegram: <Link notBounce href="https://t.me/ychebotaev" target="_blank" rel="noopener noreferrer">+79120345101</Link>
+          Telegram:{' '}
+          <Link
+            notBounce
+            href='https://t.me/ychebotaev'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            +79120345101
+          </Link>
         </p>
-        <p style={copyrightStyle}>Copyright &copy; 2017</p>
+        <p style={copyrightStyle}>Copyright &copy; 2019</p>
       </Container>
     </footer>
-  );
-};
+  )
+}
